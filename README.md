@@ -11,10 +11,9 @@ A 3-DoF robot arm is given as follows:
 ## Forward Kinematics
 The FK is designed to simulate robot arm movement. 
 
-![1](http://latex.codecogs.com/svg.latex?_0^1T=\left[\begin{matrix}- \sin{\left(\theta_{1} \right)} & - \cos{\left(\theta_{1} \right)} & 0 & 0\\\cos{\left(\theta_{1} \right)} & - \sin{\left(\theta_{1} \right)} & 0 & 0\\0 & 0 & 1 & h_{1}\\0 & 0 & 0 & 1\end{matrix}\right])
-<!-- $$
+```math
 _0^1T=\left[\begin{matrix}- \sin{\left(\theta_{1} \right)} & - \cos{\left(\theta_{1} \right)} & 0 & 0\\\cos{\left(\theta_{1} \right)} & - \sin{\left(\theta_{1} \right)} & 0 & 0\\0 & 0 & 1 & h_{1}\\0 & 0 & 0 & 1\end{matrix}\right]
-$$ -->
+```
 
 $$
 _1^2T=\left[\begin{matrix}\cos{\left(\delta_{\theta} - \theta_{2} \right)} & \sin{\left(\delta_{\theta} - \theta_{2} \right)} & 0 & 0\\0 & 0 & -1 & 0\\- \sin{\left(\delta_{\theta} - \theta_{2} \right)} & \cos{\left(\delta_{\theta} - \theta_{2} \right)} & 0 & 0\\0 & 0 & 0 & 1\end{matrix}\right]
